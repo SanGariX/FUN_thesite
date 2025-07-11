@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Kalnia:100,200,300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import './reset.css';
+
+@import './header.css';
+@import './footer.css';
+@import './pages.css';
+@import './service.css';
+@import './about.css';
+@import './faq.css';
+@import './how-working.css';
+@import './hero.css';
+@import './reviews.css';
+@import './pricing.css';
+@import './contacts.css';
+
+@import './cookies.css';
+
+:root {
+  --bg: #f5f6fd;
+  --body: #082526;
+  --header: rgba(230, 230, 250, 0.7);
+  --footer: rgba(230, 230, 250, 0.7);
+  --font-family: 'Kumbh Sans', sans-serif;
+  --second-family: 'Kalnia', sans-serif;
+  --third-family: 'Inter', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  max-width: 375px;
+  min-width: 250px;
+  margin: 0 auto;
+}
+.title-h2 {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--body);
+  margin-bottom: 40px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 56px;
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.swiper-pagination {
+  display: block;
+  position: relative !important;
+  transform: translateY(40px) !important  ;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 64px;
+  @media screen and (min-width: 1440px) {
+    display: none !important;
+  }
+}
+.swiper-pagination-bullet {
+  width: 32px !important;
+  height: 32px !important;
+  margin: 0 !important;
+  background-color: #ea7f89 !important;
+}
+.btn {
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #fedb70;
+}
+.section {
+  margin-bottom: 80px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 96px;
+  }
+}
+.bacground_wrapper {
+  background: url(../img/background_service_and_working.png) center center
+    no-repeat;
+  background-size: 375px 736px;
+  @media screen and (min-width: 1440px) {
+    background-size: auto;
+  }
+}

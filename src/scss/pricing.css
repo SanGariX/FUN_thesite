@@ -1,0 +1,86 @@
+.pricing {
+  scroll-margin-top: 100px;
+  padding: 80px 0;
+  background: url(../img/pricing/background.png) center center/530px 544px
+    no-repeat;
+  @media screen and (min-width: 1440px) {
+    padding: 96px 0;
+    background-size: 1441px 759px;
+  }
+}
+.pricing_container {
+  padding: 0 13px;
+  @media screen and (min-width: 1440px) {
+    padding: 0 75px;
+  }
+}
+.pricing_menu {
+  width: 100%;
+  box-shadow: 0 0 40px 0 rgba(159, 154, 235, 0.3);
+  background: rgba(230, 230, 250, 0.4);
+  border-radius: 32px;
+  padding: 16px;
+  width: 100%;
+  height: 272px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  @media screen and (min-width: 1440px) {
+    width: 636px;
+    height: auto;
+    padding: 32px;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+}
+.pricing_menu_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #6952d5;
+}
+.pricing_menu_row_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--body);
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+  }
+}
+.pricing_menu_row_pricing {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--body);
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+  }
+}
+.pricing_menu_row_pricing span {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fec311;
+  @media screen and (min-width: 1440px) {
+    font-size: 32px;
+  }
+}
+.pricing_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--body);
+  width: 100%;
+  text-align: center;
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+  }
+}
